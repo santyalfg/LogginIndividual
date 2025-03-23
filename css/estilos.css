@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 body{
@@ -81,6 +81,7 @@ main{
     position: relative;
     top: -185px;
     left: 10px;
+    transition: left 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
 }
 
 .contenedor__loggin-register form{
@@ -129,3 +130,39 @@ main{
     display: none;
 }
 
+/* Sitio Responsive disgn */
+
+@media screen and (max-width: 850px) {
+
+    main{
+        margin-top: 50px;
+    }
+
+    .caja__trasera{
+        max-width: 350px;
+        height: 300px;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .caja__trasera div{
+        margin: 0px;
+        position: absolute;
+        
+    }
+
+
+
+/* formulario responsive desing */
+
+    .contenedor__loggin-register{
+    top: -10px;
+    left: -5px;
+    margin: auto;
+    }
+
+    .contenedor__loggin-register form{
+    position: relative;
+    }
+
+}
